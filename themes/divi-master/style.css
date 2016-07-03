@@ -1,0 +1,528 @@
+/*
+Theme Name: Divi Child Theme
+Description: A child theme to house custom coding which modifies the Divi parent theme by Elegant Themes. Includes default line numbers where the code was taken from in the parent theme.
+Author:   Brad Dalton http://wpsites.net
+Template: Divi
+*/
+
+@import url("../Divi/style.css");
+
+
+@font-face 
+{
+    font-family: 'FbHachaluzim-Bold';
+    src: url('fonts/FbHachaluzim-Bold/FbHachaluzim-Bold.eot');
+    src: local('ֳ¢ֻֲ÷'), 
+         url('fonts/FbHachaluzim-Bold/FbHachaluzim-Bold.woff') format('woff'), 
+         url('fonts/FbHachaluzim-Bold/FbHachaluzim-Bold.ttf') format('truetype'), 
+         url('fonts/FbHachaluzim-Bold/FbHachaluzim-Bold.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'fbhachaluzim_regularregular';
+    src: url('fonts/fbhachaluzim-regular-webfont.eot');
+    src: url('fonts/fbhachaluzim-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/fbhachaluzim-regular-webfont.woff') format('woff'),
+         url('fonts/fbhachaluzim-regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'fbhachaluzimmedium';
+    src: url('fonts/fbhachaluzim-medium-webfont.eot');
+    src: url('fonts/fbhachaluzim-medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/fbhachaluzim-medium-webfont.woff') format('woff'),
+         url('fonts/fbhachaluzim-medium-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body {
+    font-family: 'FbHachaluzimmedium', Arial;
+}
+
+h1, h2, h3, h4, h5, h6, body, input, textarea, select {
+    font-family: 'FbHachaluzimmedium', Arial!important;
+}
+
+/* Style Footer Credits - Lines 948 & 949 */
+
+#footer-info { 
+text-align: left; 
+color: green; 
+padding-bottom: 10px; 
+float: left; 
+}
+
+#footer-info a { 
+font-weight: 700; 
+color: yellow; 
+}
+
+#footer-info a:hover { 
+color: pink; 
+}
+
+
+/* Style Footer Social Icons - Lines 1185 to 1198 */
+
+#footer-bottom .et-social-facebook a {
+    color: blue;
+}
+#footer-bottom .et-social-twitter a {
+    color: powderblue;
+}
+#footer-bottom .et-social-google-plus a {
+    color: red;
+}
+#footer-bottom .et-social-rss a {
+    color: orange;
+}
+
+/* Hover Colors*/
+#footer-bottom .et-social-facebook a:hover {
+    color: pink;
+}
+#footer-bottom .et-social-twitter a:hover {
+    color: pink;
+}
+#footer-bottom .et-social-google-plus a:hover {
+    color: pink;
+}
+#footer-bottom .et-social-rss a:hover {
+    color: pink;
+}
+
+/***** agent fixes ****/
+
+
+
+.page-id-3727 .et_pb_text_align_right {
+
+    margin: 0;
+}
+
+.page-id-3727 .wpcf7-form-control-wrap input[type=text]{
+    border: none;
+    border-radius: 5px;
+    height: 20px;
+    margin: 0;
+    max-width: 82%;
+    padding: 0 5px;
+}
+
+.page-id-3727 input.wpcf7-form-control.wpcf7-submit {
+    width: 85%;
+    height: 53px;
+    cursor: pointer;
+    margin: 0;
+    background: url('images/submit_btn.png') no-repeat;
+    background-size: cover;
+    z-index: 999999;
+    border: 0;
+    position: relative;
+    padding: 0;
+}
+
+.page-id-3727 #menu2 .et_pb_column_1_4:first-of-type {
+    background-color: #000;
+    padding-right: 15px;
+    background: url(images/form_holder_bg_w767.png) top left no-repeat;
+}
+
+.page-id-3727 #menu2 .et_pb_bg_layout_dark h1, 
+.page-id-3727 #menu2 .et_pb_bg_layout_dark h2 {
+    padding: 0;
+}
+
+.page-id-3727 #menu2 .et_pb_bg_layout_dark h1 {
+    text-align: center;
+    font-size: 39px;
+    font-family: 'FbHachaluzim-Bold', Arial!important;
+        line-height: 2.2rem;
+    
+    }
+  .page-id-3727 .et_pb_blurb_position_right .et_pb_blurb_content {
+
+    font-size: 22px;
+}
+
+.page-id-3727 #menu3 {
+    background-image: url(images/grey_gradient_bg.png)!important;
+}
+
+.page-id-3727 #menu1 {
+    background: #231F20!important;
+}
+
+.page-id-3727 input.wpcf7-email {
+    border: none;
+    border-radius: 5px;
+    height: 19px;
+    max-width: 82%;
+    padding: 0 5px;
+}
+
+.page-id-3727 select.wpcf7-form-control.wpcf7-select {
+    width: 85%;
+    border-radius: 5px;
+}
+
+
+
+
+/*********************/
+
+
+/***** agent fixes ****/
+.page-id-4213 .et_pb_text_align_right {
+
+    margin: 0;
+}
+
+.page-id-4213 .wpcf7-form-control-wrap input[type=text]{
+    border: none;
+    border-radius: 5px;
+    height: 20px;
+    margin: 0;
+    max-width: 82%;
+    padding: 0 5px;
+}
+
+.page-id-4213 input.wpcf7-form-control.wpcf7-submit {
+    width: 85%;
+    height: 53px;
+    cursor: pointer;
+    margin: 0;
+    background: url('images/submit_btn.png') no-repeat;
+    background-size: cover;
+    z-index: 999999;
+    border: 0;
+    position: relative;
+    padding: 0;
+}
+
+.page-id-4213 #menu2 .et_pb_column_1_4:first-of-type {
+    background-color: #000;
+    padding-right: 15px;
+    background: url(images/form_holder_bg_w767.png) top left no-repeat;
+}
+
+.page-id-4213 #menu2 .et_pb_bg_layout_dark h1, 
+.page-id-4213 #menu2 .et_pb_bg_layout_dark h2 {
+    padding: 0;
+}
+
+.page-id-4213 #menu2 .et_pb_bg_layout_dark h1 {
+    text-align: center;
+    font-size: 39px;
+    font-family: 'FbHachaluzim-Bold', Arial!important;
+        line-height: 2.2rem;
+    
+    }
+  .page-id-4213 .et_pb_blurb_position_right .et_pb_blurb_content {
+
+    font-size: 22px;
+}
+
+.page-id-4213 #menu3 {
+    background-image: url(images/grey_gradient_bg.png)!important;
+}
+
+.page-id-4213 #menu1 {
+    background: #231F20!important;
+}
+
+.page-id-4213 input.wpcf7-email {
+    border: none;
+    border-radius: 5px;
+    height: 19px;
+    max-width: 82%;
+    padding: 0 5px;
+}
+
+.page-id-4213 select.wpcf7-form-control.wpcf7-select {
+    width: 85%;
+    border-radius: 5px;
+} 
+
+.page-id-4213 form.wpcf7-form {
+    display: none;
+}
+
+.page-id-4213 #menu2 .et_pb_column_1_4:first-of-type {
+    padding-bottom: 10rem;
+}
+
+
+/**************************************************/
+
+@media only screen and (max-width: 980px) {
+
+.page-id-3727 #menu2 .et_pb_row,  
+.page-id-4213 #menu2 .et_pb_row  {
+    width: 100%;
+}
+
+.page-id-3727 #menu2 .et_pb_column_1_4:first-of-type, 
+.page-id-4213 #menu2 .et_pb_column_1_4:first-of-type {
+
+    background-size: cover;
+        background: #232323;
+}
+
+.page-id-3727 .wpcf7-form-control-wrap input[type=text], 
+.page-id-4213 .wpcf7-form-control-wrap input[type=text] {
+    height: 35px;
+    max-width: 82%;
+    width: 100%;
+
+}
+
+.page-id-3727 input.wpcf7-email, 
+.page-id-4213 input.wpcf7-email  {
+    height: 35px;
+    max-width: 82%;
+    width: 100%;
+
+}
+
+.page-id-3727 select.wpcf7-form-control.wpcf7-select, 
+.page-id-4213 select.wpcf7-form-control.wpcf7-select {
+    height: 35px;
+}
+
+.page-id-3727 #menu2 .et_pb_column_1_4:first-of-type,  
+.page-id-4213 #menu2 .et_pb_column_1_4:first-of-type {
+
+    background-size: cover;
+    max-width: 400px;
+    margin: auto;
+    float: none;
+}
+
+.page-id-3727 input.wpcf7-form-control.wpcf7-submit, 
+.page-id-4213 input.wpcf7-form-control.wpcf7-submit  {
+
+    max-width: 50%;
+
+}
+
+
+}
+
+.page-id-5273 .et_pb_text_align_right {
+
+    margin: 0;
+}
+
+.page-id-5273 .wpcf7-form-control-wrap input[type=text]{
+    border: none;
+    border-radius: 5px;
+    height: 20px;
+    margin: 0;
+    max-width: 82%;
+    padding: 0 5px;
+}
+
+.page-id-5273 input.wpcf7-form-control.wpcf7-submit {
+    width: 85%;
+    height: 53px;
+    cursor: pointer;
+    margin: 0;
+    background: url('images/submit_btn.png') no-repeat;
+    background-size: cover;
+    z-index: 999999;
+    border: 0;
+    position: relative;
+    padding: 0;
+}
+
+.page-id-5273 #menu2 .et_pb_column_1_4:first-of-type {
+    background-color: #000;
+    padding-right: 15px;
+    background: url(images/form_holder_bg_w767.png) top left no-repeat;
+}
+
+.page-id-5273 #menu2 .et_pb_bg_layout_dark h1, 
+.page-id-5273 #menu2 .et_pb_bg_layout_dark h2 {
+    padding: 0;
+}
+
+.page-id-5273 #menu2 .et_pb_bg_layout_dark h1 {
+    text-align: center;
+    font-size: 39px;
+    font-family: 'FbHachaluzim-Bold', Arial!important;
+        line-height: 2.2rem;
+    
+    }
+  .page-id-5273 .et_pb_blurb_position_right .et_pb_blurb_content {
+
+    font-size: 22px;
+}
+
+.page-id-5273 #menu3 {
+    background-image: url(images/grey_gradient_bg.png)!important;
+}
+
+.page-id-5273 #menu1 {
+    background: #231F20!important;
+}
+
+.page-id-5273 input.wpcf7-email {
+    border: none;
+    border-radius: 5px;
+    height: 19px;
+    max-width: 82%;
+    padding: 0 5px;
+}
+
+.page-id-5273 select.wpcf7-form-control.wpcf7-select {
+    width: 85%;
+    border-radius: 5px;
+}
+
+
+
+
+/*********************/
+
+
+/***** agent fixes ****/
+.page-id-5276 .et_pb_text_align_right {
+
+    margin: 0;
+}
+
+.page-id-5276 .wpcf7-form-control-wrap input[type=text]{
+    border: none;
+    border-radius: 5px;
+    height: 20px;
+    margin: 0;
+    max-width: 82%;
+    padding: 0 5px;
+}
+
+.page-id-5276 input.wpcf7-form-control.wpcf7-submit {
+    width: 85%;
+    height: 53px;
+    cursor: pointer;
+    margin: 0;
+    background: url('images/submit_btn.png') no-repeat;
+    background-size: cover;
+    z-index: 999999;
+    border: 0;
+    position: relative;
+    padding: 0;
+}
+
+.page-id-5276 #menu2 .et_pb_column_1_4:first-of-type {
+    background-color: #000;
+    padding-right: 15px;
+    background: url(images/form_holder_bg_w767.png) top left no-repeat;
+}
+
+.page-id-5276 #menu2 .et_pb_bg_layout_dark h1, 
+.page-id-5276 #menu2 .et_pb_bg_layout_dark h2 {
+    padding: 0;
+}
+
+.page-id-5276 #menu2 .et_pb_bg_layout_dark h1 {
+    text-align: center;
+    font-size: 39px;
+    font-family: 'FbHachaluzim-Bold', Arial!important;
+        line-height: 2.2rem;
+    
+    }
+  .page-id-5276 .et_pb_blurb_position_right .et_pb_blurb_content {
+
+    font-size: 22px;
+}
+
+.page-id-5276 #menu3 {
+    background-image: url(images/grey_gradient_bg.png)!important;
+}
+
+.page-id-5276 #menu1 {
+    background: #231F20!important;
+}
+
+.page-id-5276 input.wpcf7-email {
+    border: none;
+    border-radius: 5px;
+    height: 19px;
+    max-width: 82%;
+    padding: 0 5px;
+}
+
+.page-id-5276 select.wpcf7-form-control.wpcf7-select {
+    width: 85%;
+    border-radius: 5px;
+} 
+
+.page-id-5276 form.wpcf7-form {
+    display: none;
+}
+
+.page-id-5276 #menu2 .et_pb_column_1_4:first-of-type {
+    padding-bottom: 10rem;
+}
+
+
+/**************************************************/
+
+@media only screen and (max-width: 980px) {
+
+.page-id-5273 #menu2 .et_pb_row,  
+.page-id-5276 #menu2 .et_pb_row  {
+    width: 100%;
+}
+
+.page-id-5273 #menu2 .et_pb_column_1_4:first-of-type, 
+.page-id-5276 #menu2 .et_pb_column_1_4:first-of-type {
+
+    background-size: cover;
+        background: #232323;
+}
+
+.page-id-5273 .wpcf7-form-control-wrap input[type=text], 
+.page-id-5276 .wpcf7-form-control-wrap input[type=text] {
+    height: 35px;
+    max-width: 82%;
+    width: 100%;
+
+}
+
+.page-id-5273 input.wpcf7-email, 
+.page-id-5276 input.wpcf7-email  {
+    height: 35px;
+    max-width: 82%;
+    width: 100%;
+
+}
+
+.page-id-5273 select.wpcf7-form-control.wpcf7-select, 
+.page-id-5276 select.wpcf7-form-control.wpcf7-select {
+    height: 35px;
+}
+
+.page-id-5273 #menu2 .et_pb_column_1_4:first-of-type,  
+.page-id-5276 #menu2 .et_pb_column_1_4:first-of-type {
+
+    background-size: cover;
+    max-width: 400px;
+    margin: auto;
+    float: none;
+}
+
+.page-id-5273 input.wpcf7-form-control.wpcf7-submit, 
+.page-id-5276 input.wpcf7-form-control.wpcf7-submit  {
+
+    max-width: 50%;
+
+}
