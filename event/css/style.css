@@ -1,0 +1,169 @@
+body{
+  direction: rtl;
+  background: #E8EAED;
+}
+img {
+  max-width: 100%;
+  width: 100%
+}
+.bg {
+  background: #fff;
+}
+.heading h2 {
+    margin: 0;
+    color: #fff;
+    text-align: center;
+    padding: 8px 0;
+    font-size: 24px;
+    background: #002157;
+}
+
+.heading img {
+    padding: 15px 0;
+}
+.main-padding {
+    padding: 0 15px;
+}
+
+.heading p {
+    font-size: 17px;
+    margin-bottom: 5px;
+    color: #333;
+    font-weight: 700;
+}
+
+.heading.pad h2 {
+    margin-bottom: 10px;
+}
+
+.single-event {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    padding: 3px;
+}
+
+.img-bar {
+    border: 1px solid #ddd;
+    padding: 2px;
+}
+
+.event-text p {
+    margin-bottom: 2px;
+    font-size: 13px;
+}
+
+.event-text h4 {
+    font-size: 18px;
+    color: #333;
+}
+
+a.btn {
+    background: #008000;
+    color: #fff;
+    font-size: 17px;
+    padding: 10px 20px;
+    border: 1px solid #a9c469;
+    border-radius: 10px;
+    font-weight: 700;
+}
+a.btn:hover {
+    color: #fff;
+}
+.button_area {
+    text-align: center;
+    margin-top: 10px;
+}
+
+a.btn i {
+    margin-left: 7px;
+}
+
+.video-area {
+    border: 1px solid #ddd;
+    overflow: hidden;
+    margin: 14px 0;
+}
+
+.single_list ul {
+    margin: 10px 0;
+    padding: 0;
+}
+
+.single_list ul li {
+    list-style: none;
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+.single_list ul li i {
+    margin-left: 5px;
+    font-size: 18px;
+}
+
+.single_list {
+    margin: 15px 0;
+}
+.form-area {
+    background: #C0C0C0;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+}
+
+.form-area input {
+    border: 1px solid #999;
+    padding: 18px 5px;
+    border-radius: 6px;
+}
+
+.form-area label {
+    color: #fff;
+}
+
+.footer a{
+    color: #333;
+}
+.form-area button.btn.form-button {
+    color: #fff;
+    background: #002157;
+    font-size: 18px;
+    padding: 8px 20px;
+}
+
+.form-area label.chk {
+    margin-right: 5px;
+    padding-top: 10px;
+}
+.heading h6 {
+    text-align: center;
+}
+.video-area h6 {
+    margin-left: 40px;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 3px;
+}
+
+.video-area h6 a {
+    color: #C71585;
+}
+
+.video-area p {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 8px;
+}
+@media only screen and (min-width: 992px) {
+.container {
+  width: 900px;
+}
+}
+
+@media only screen and (max-width: 991px) {
+
+.video-area iframe {
+  width: 100%;
+  height: auto;
+}
+
+}
