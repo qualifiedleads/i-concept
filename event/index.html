@@ -135,25 +135,30 @@
                 <h2>לקבלת תוכנית לימודים מפורטת ומועדי פתיחה :</h2>
               </div>              
               <div class="form-area">
-                <form action="" method="POST">
+                <form action="http://www.bmby.com/shared/AddClient/index.php" method="POST">
+                  <input type="hidden" name="ProjectID" value="7061" />
+                  <input type="hidden" name="Password" value="asdw0911" />
+                  <input type="hidden" name="Comments" value="websiteLead" />
+                  <input type="hidden" name="ProductTitle" value="עיצוב פנים" />
+                  <input type="hidden" name="u71" value="1" />
                   <div class="row">
                       <div class="form-group col-md-6 col-sm-6">
                         <label for="lname">שם משפחה *</label>
-                        <input type="text" class="form-control" id="lname">
+                        <input type="text" class="form-control" name="Lname" id="lname">
                       </div>
                       <div class="form-group col-md-6 col-sm-6">
                         <label for="fname">שם פרטי *</label>
-                        <input type="text" class="form-control" id="fname">
+                        <input type="text" class="form-control" id="fname" name="Fname">
                       </div>
                   </div>
                   <div class="row">
                       <div class="form-group col-md-6 col-sm-6">
                         <label for="phone">נייד *</label>
-                        <input type="text" class="form-control" id="phone">
+                        <input type="text" class="form-control" id="phone" name="Mobile">
                       </div>
                       <div class="form-group col-md-6 col-sm-6">
                         <label for="email">מייל *</label>
-                        <input type="email" class="form-control" id="email">
+                        <input type="email" class="form-control" id="email" name="Email">
                       </div>
                   </div>
                   <div class="row">
