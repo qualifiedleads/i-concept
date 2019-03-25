@@ -180,6 +180,19 @@ a.btn.btn-green i {
     color: #472708;
     font-weight: 700;
 }
+.form-area label {
+    margin-bottom: 0;
+    padding-top: 7px;
+}
+
+.form-area2 label {
+    margin-bottom: 0;
+    padding-top: 8px;
+}
+
+.form-area2 input {
+    border-radius: 10px;
+}
 
 
 
