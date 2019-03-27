@@ -201,7 +201,7 @@ h2.text_p {
     float: left;
     margin-left: 19px;
     font-size: 100px;
-    margin-top: 1px;
+    margin-top: 10px;
 }
 .col-sm-12.video_images {
     height: 445px;
@@ -210,17 +210,27 @@ h2.text_p {
 .container {
   width: 900px;
 }
+
 }
 
-@media only screen and (max-width: 991px) {
-
-.video-area iframe {
+@media (max-width: 991px) {
+.main-area .header-area h2.text_p {
+    text-align: center;
+    float: none;
+}
+.main-area .header-area .header-logo {
+    text-align: -webkit-center;
+    text-align: -moz-center;
+    text-align: -o-center;
+    text-align: -safari-center;
+}
+/*.video-area iframe {
   width: 100%;
   height: auto;
 }
 .form-group {
     margin-bottom: 15px;
     overflow: hidden;
-}
+}*/
 
 }
