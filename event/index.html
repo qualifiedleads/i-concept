@@ -142,24 +142,28 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               </div>              
               <div class="form-area">
                 <form action="" method="POST">
+                <input type="hidden" name="ProjectID" value="7061">
+                <input type="hidden" name="Password" value="asdw0911">
+                <input type="hidden" name="Comments" value="websiteLead">
+                <input type="hidden" name="ProductTitle" value="עיצוב פנים">
                   <div class="row">
                       <div class="form-group col-md-6 col-sm-6">
                         <label for="lname">שם משפחה *</label>
-                        <input type="text" class="form-control" id="lname">
+                        <input type="text" class="form-control" id="lname" name="Lname">
                       </div>
                       <div class="form-group col-md-6 col-sm-6">
                         <label for="fname">שם פרטי *</label>
-                        <input type="text" class="form-control" id="fname">
+                        <input type="text" class="form-control" id="fname" name="Fname">
                       </div>
                   </div>
                   <div class="row">
                       <div class="form-group col-md-6 col-sm-6">
                         <label for="phone">נייד *</label>
-                        <input type="text" class="form-control" id="phone">
+                        <input type="text" class="form-control" id="phone" name="Mobile" >
                       </div>
                       <div class="form-group col-md-6 col-sm-6">
                         <label for="email">מייל *</label>
-                        <input type="email" class="form-control" id="email">
+                        <input type="email" class="form-control" id="email"  name="Email">
                       </div>
                   </div>
                   <div class="row">
@@ -167,7 +171,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         <button class="btn form-button" type="submit">אני רוצה לדעת עוד!</button>
                       </div>
                       <div class="col-md-6 col-sm-6">
-                        <input type="checkbox" id="check"><label for="check" class="chk">אני מאשר/ת קבלת  מידע מקונספט </label>
+                        <input type="checkbox" id="check" name="u71" value="1"><label for="check" class="chk">אני מאשר/ת קבלת  מידע מקונספט </label>
                       </div>
                   </div>
                 </form>
@@ -183,7 +187,33 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <div class="footer text-center">
     <p><a href="">Landing page</a> by <a href="">smoove</a> - <a href="">emailing</a></p>
   </div>
+  <script
+  src="http://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+<script type="text/javascript">
+  $(document).ready( function () {
+    $('form').submit( function (e) {
+      e.preventDefault();
+      var formdata = $(this).serialize();
+      $.ajax({
+          type: "POST",
+          url: "http://www.bmby.com/shared/AddClient/index.php",
+          crossDomain: true,
+          // dataType: 'jsonp',
+          data: formdata,
+          success:function(res){
+                window.location.href="thankyou.html"
+            },
+            error:function(res){
 
+                window.location.href="thankyou.html"
+            }
+       });
+      return false;
+    });
+  });
+</script>
 
 </body>
 </html>

@@ -515,5 +515,29 @@
       ga('send', 'pageview');
     ​
     </script>
+
+<script type="text/javascript">
+  $(document).ready( function () {
+    $('form').submit( function (e) {
+      e.preventDefault();
+      var formdata = $(this).serialize();
+      $.ajax({
+          type: "POST",
+          url: "http://www.bmby.com/shared/AddClient/index.php",
+          crossDomain: true,
+          // dataType: 'jsonp',
+          data: formdata,
+          success:function(res){
+                window.location.href="thankyou.html"
+            },
+            error:function(res){
+
+                window.location.href="thankyou.html"
+            }
+       });
+      return false;
+    });
+  });
+</script>
 </body>
 </html>

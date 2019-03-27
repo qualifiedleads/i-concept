@@ -32,7 +32,7 @@
         <div class="row">
           <div class="col-sm-5">
             <div class="form-area">
-              <form class="form-horizontal" action="http://www.bmby.com/shared/AddClient/index.php" method="POST">
+              <form  class="form-horizontal crm-form" action="http://www.bmby.com/shared/AddClient/index.php" method="POST">
                 <input type="hidden" name="ProjectID" value="7061">
                 <input type="hidden" name="Password" value="asdw0911">
                 <input type="hidden" name="Comments" value="websiteLead">
@@ -139,7 +139,7 @@
         </div>
       </div>
       <div class="form-area2 p-0">
-          <form action="http://www.bmby.com/shared/AddClient/index.php" method="POST">
+          <form class="crm-form" action="http://www.bmby.com/shared/AddClient/index.php" method="POST">
             <input type="hidden" name="ProjectID" value="7061">
                 <input type="hidden" name="Password" value="asdw0911">
                 <input type="hidden" name="Comments" value="websiteLead">
@@ -190,8 +190,33 @@
   <div class="footer_credit text-center">
     <p><a href="https://www.concept-academy.co.il/">קונספט המכללה לעיצוב</a> </p>
   </div>
-  
+  <script
+  src="http://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+<script type="text/javascript">
+	$(document).ready( function () {
+		$('.crm-form').submit( function (e) {
+			e.preventDefault();
+			var formdata = $(this).serialize();
+			$.ajax({
+			    type: "POST",
+			    url: "http://www.bmby.com/shared/AddClient/index.php",
+			    crossDomain: true,
+    			// dataType: 'jsonp',
+			    data: formdata,
+			    success:function(res){
+		            window.location.href="thankyou.html"
+		        },
+		        error:function(res){
 
+		            window.location.href="thankyou.html"
+		        }
+			 });
+			return false;
+		});
+	});
+</script>
 
 
 </body>
