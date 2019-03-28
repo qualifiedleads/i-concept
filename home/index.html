@@ -202,7 +202,10 @@
 			$.ajax({
 			    type: "POST",
 			    url: "http://www.bmby.com/shared/AddClient/index.php",
-			    crossDomain: true,
+          contentType:"application/json",
+			    headers: {
+                    'Access-Control-Allow-Origin': '*'
+                },
     			dataType: 'jsonp',
 			    data: formdata,
 			    success:function(res){
