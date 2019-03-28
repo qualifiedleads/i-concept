@@ -260,6 +260,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     $('.crm-form').submit( function (e) {
       e.preventDefault();
       var formdata = $(this).serialize();
+      console.log(formdata);
       $.ajax({
           type: "POST",
           url: "http://www.bmby.com/shared/AddClient/index.php",
