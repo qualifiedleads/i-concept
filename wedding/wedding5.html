@@ -28,7 +28,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="row">
           <div class="col-sm-5">
             <div class="form-area">
-              <form class="form-horizontal" action="http://www.bmby.com/shared/AddClient/index.php" method="POST">
+              <form class="form-horizontal crm-form" action="http://www.bmby.com/shared/AddClient/index.php" method="POST">
                 <input type="hidden" name="ProjectID" value="7061">
                 <input type="hidden" name="Password" value="asdw0911">
                 <input type="hidden" name="Comments" value="websiteLead">
@@ -156,32 +156,36 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
       </div>
       <div class="form-area2 p-0">
-          <form action="" method="POST">
+          <form class="crm-form" action="" method="POST">
+            <input type="hidden" name="ProjectID" value="7061">
+            <input type="hidden" name="Password" value="asdw0911">
+            <input type="hidden" name="Comments" value="websiteLead">
+            <input type="hidden" name="ProductTitle" value="עיצוב פנים">
             <div class="row">
                 <div class="col-sm-12">
                   <h4 class="text-center" style="color: #000;">1,000 ש"ח מלגה לפונים באמצעות טופס זה:</h4>
                 </div>
                 <div class="form-group col-sm-6">
                   <div class="col-sm-8 col-xs-8 px-0">
-                    <input type="test" class="form-control" id="fname">
+                    <input type="test" class="form-control" id="fname" name="Fname">
                   </div>
                   <label for="fname" class="col-sm-4 col-xs-4">שם פרטי *</label>
                 </div>
                 <div class="form-group col-sm-6">
                   <div class="col-sm-8 col-xs-8 px-0">
-                    <input type="test" class="form-control" id="lname">                    
+                    <input type="test" class="form-control" id="lname" name="Lname">                    
                   </div>
                   <label for="lname" class="col-sm-4 col-xs-4">שם משפחה</label>
                 </div>
                 <div class="form-group col-sm-6">
                   <div class="col-sm-8 col-xs-8 px-0">                    
-                    <input type="email" class="form-control" id="email">
+                    <input type="email" class="form-control" id="email" name="email">
                   </div>
                   <label for="email" class="col-sm-4 col-xs-4">מייל</label>
                 </div>
                 <div class="form-group col-sm-6">
                   <div class="col-sm-8 col-xs-8 px-0">                    
-                    <input type="tel" class="form-control" id="phone">
+                    <input type="tel" class="form-control" id="phone" name="Mobile">
                   </div>
                   <label for="phone" class="col-sm-4 col-xs-4">טלפון נייד *</label>
                 </div>
@@ -210,7 +214,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   crossorigin="anonymous"></script>
 <script type="text/javascript">
   $(document).ready( function () {
-    $('form').submit( function (e) {
+    $('.crm-form').submit( function (e) {
       e.preventDefault();
       var formdata = $(this).serialize();
       $.ajax({
