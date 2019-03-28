@@ -209,10 +209,12 @@
     			dataType: 'jsonp',
 			    data: formdata,
 			    success:function(res){
+            console.log(res);
 		            window.location.href="thankyou.html";
 		        },
 		        error:function(res){
-              window.location.href="thankyou.html";    
+              console.log(res);
+              //window.location.href="thankyou.html";    
 		        }
 			 });
       // setTimeout(function() {
