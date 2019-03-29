@@ -32,11 +32,8 @@
         <div class="row">
           <div class="col-sm-5">
             <div class="form-area">
-              <form  class="form-horizontal crm-form" action="https://www.bmby.com/shared/AddClient/index.php" method="POST">
-                <input type="hidden" name="ProjectID" value="7061">
-                <input type="hidden" name="Password" value="asdw0911">
-                <input type="hidden" name="Comments" value="websiteLead">
-                <input type="hidden" name="ProductTitle" value="עיצוב פנים">
+              <form  class="form-horizontal crm-form" action="http://104.248.51.251/crm.php" method="POST">
+                <input type="hidden" name="page" value="home">
                 <h4>1,000 ש"ח מלגה לפונים מטופס זה:</h4>
                 <div class="form-group">
                   <div class="col-sm-8 col-xs-8 pr-0">
@@ -139,11 +136,8 @@
         </div>
       </div>
       <div class="form-area2 p-0">
-          <form class="crm-form" action="https://www.bmby.com/shared/AddClient/index.php" method="POST">
-            <input type="hidden" name="ProjectID" value="7061">
-                <input type="hidden" name="Password" value="asdw0911">
-                <input type="hidden" name="Comments" value="websiteLead">
-                <input type="hidden" name="ProductTitle" value="עיצוב פנים">
+          <form class="crm-form" action="http://104.248.51.251/crm.php" method="POST">
+            <input type="hidden" name="page" value="home">
             <div class="row">
                 <div class="col-sm-12">
                   <h4>1,000 ש"ח מלגה לפונים מטופס זה:</h4>
@@ -190,41 +184,5 @@
   <div class="footer_credit text-center">
     <p><a href="https://www.concept-academy.co.il/">קונספט המכללה לעיצוב</a> </p>
   </div>
-  <script
-  src="https://code.jquery.com/jquery-3.3.1.js"
-  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-  crossorigin="anonymous"></script>
-<script type="text/javascript">
-	$(document).ready( function () {
-		$('.crm-form').submit( function (e) {
-			e.preventDefault();
-			var formdata = $(this).serialize();
-			$.ajax({
-			    type: "POST",
-			    url: "https://www.bmby.com/shared/AddClient/index.php",
-          contentType:"application/json",
-			    headers: {
-                    'Access-Control-Allow-Origin': '*'
-                },
-    			dataType: 'jsonp',
-			    data: formdata,
-			    success:function(res){
-            console.log(res);
-		            window.location.href="thankyou.html";
-		        },
-		        error:function(res){
-              console.log(res);
-              //window.location.href="thankyou.html";    
-		        }
-			 });
-      // setTimeout(function() {
-      //   window.location.href="thankyou.html"
-      //   }, 5000);
-			return false;
-		});
-	});
-</script>
-
-
 </body>
 </html>
