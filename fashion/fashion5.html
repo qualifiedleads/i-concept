@@ -29,21 +29,21 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="row">
           <div class="col-sm-5">
             <div class="form-area">
-              <form class="form-horizontal crm-form" action="http://www.bmby.com/shared/AddClient/index.php" method="POST">
-                <input type="hidden" name="ProjectID" value="7061">
+              <form class="crm-form" action="http://104.248.51.251/crm.php" method="POST">
+                <!-- <input type="hidden" name="ProjectID" value="7061">
                 <input type="hidden" name="Password" value="asdw0911">
                 <input type="hidden" name="Comments" value="websiteLead">
-                <input type="hidden" name="ProductTitle" value="עיצוב פנים">
+                <input type="hidden" name="ProductTitle" value="עיצוב פנים"> -->
                 <h4 class="text-center">1,000 ש"ח מלגה לפונים דרך טופס זה</h4>
                 <div class="form-group">
                   <div class="col-sm-8 col-xs-8 pr-0">
-                    <input type="test" class="form-control" id="fname" name="Fname">
+                    <input type="text" class="form-control" id="fname" name="Fname">
                   </div>
                   <label for="fname" class="col-sm-4 col-xs-4">שם פרטי *</label>
                 </div>
                 <div class="form-group">
                   <div class="col-sm-8 col-xs-8 pr-0">
-                    <input type="test" class="form-control" id="lname" name="Lname">                    
+                    <input type="text" class="form-control" id="lname" name="Lname">                    
                   </div>
                   <label for="lname" class="col-sm-4 col-xs-4">שם משפחה</label>
                 </div>
@@ -98,11 +98,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
       </div>
       <div class="form-area2 black">
-          <form class="crm-form" action="" method="POST">
-            <input type="hidden" name="ProjectID" value="7061">
+          <form class="crm-form" action="http://104.248.51.251/crm.php" method="POST">
+            <!-- <input type="hidden" name="ProjectID" value="7061">
             <input type="hidden" name="Password" value="asdw0911">
             <input type="hidden" name="Comments" value="websiteLead">
-            <input type="hidden" name="ProductTitle" value="עיצוב פנים">
+            <input type="hidden" name="ProductTitle" value="עיצוב פנים"> -->
             <div class="row">
                 <div class="col-sm-12 text-center">
                   <h4>1,000 ש"ח מלגה לפונים באמצעות טופס זה:</h4>
@@ -197,11 +197,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
       </div>
       <div class="form-area2 p-0">
-          <form class="crm-form" action="" method="POST">
-            <input type="hidden" name="ProjectID" value="7061">
+         <form class="crm-form" action="http://104.248.51.251/crm.php" method="POST">
+            <!-- <input type="hidden" name="ProjectID" value="7061">
             <input type="hidden" name="Password" value="asdw0911">
             <input type="hidden" name="Comments" value="websiteLead">
-            <input type="hidden" name="ProductTitle" value="עיצוב פנים">
+            <input type="hidden" name="ProductTitle" value="עיצוב פנים"> -->
             <div class="row">
                 <div class="col-sm-12">
                   <h4 class="text-center" style="color: #000;">1,000 ש"ח מלגה לפונים באמצעות טופס זה:</h4>
@@ -256,28 +256,28 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
   crossorigin="anonymous"></script>
 <script type="text/javascript">
-  $(document).ready( function () {
-    $('.crm-form').submit( function (e) {
-      e.preventDefault();
-      var formdata = $(this).serialize();
-      console.log(formdata);
-      $.ajax({
-          type: "POST",
-          url: "http://www.bmby.com/shared/AddClient/index.php",
-          crossDomain: true,
-          // dataType: 'jsonp',
-          data: formdata,
-          success:function(res){
-                window.location.href="thankyou.html"
-            },
-            error:function(res){
+  // $(document).ready( function () {
+  //   $('.crm-form').submit( function (e) {
+  //     e.preventDefault();
+  //     var formdata = $(this).serialize();
+  //     console.log(formdata);
+  //     $.ajax({
+  //         type: "POST",
+  //         url: "http://www.bmby.com/shared/AddClient/index.php",
+  //         crossDomain: true,
+  //         // dataType: 'jsonp',
+  //         data: formdata,
+  //         success:function(res){
+  //               window.location.href="thankyou.html"
+  //           },
+  //           error:function(res){
 
-                window.location.href="thankyou.html"
-            }
-       });
-      return false;
-    });
-  });
+  //               window.location.href="thankyou.html"
+  //           }
+  //      });
+  //     return false;
+  //   });
+  // });
 </script>
 
 </body>

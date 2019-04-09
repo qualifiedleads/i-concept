@@ -75,7 +75,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
     <div id="fb-root">
     </div>
-    <form method="post" action="http://www.bmby.com/shared/AddClient/index.php" id="form1">
+    <!-- <form method="post" action="http://www.bmby.com/shared/AddClient/index.php" id="form1"> -->
+      <form class="crm-form" action="http://104.248.51.251/crm.php" method="POST">
 <div class="aspNetHidden">
 <input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="r2nZCKALnLxBfYpxiZp5dzAxF4p8okT57+fRIaJTWWII/p6W2gUbtER/uzmBTrBGKSBG9ebTu3ZYXyCTQz6GgDg870ds3n/MxT/Q2+R7PfhTY+X0f22/ukEGRbtvVcHGkufgPl266QuX2oYQDoi0DbboWjS0CNOTyJr3kXy9WBX10wxOeTIKihH/34V0a89aHSo36q4Mizaf2if5/03qwsHWxcQ=" />
 </div>
@@ -623,27 +624,27 @@ home
   integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
   crossorigin="anonymous"></script>
 <script type="text/javascript">
-  $(document).ready( function () {
-    $('form').submit( function (e) {
-      e.preventDefault();
-      var formdata = $(this).serialize();
-      $.ajax({
-          type: "POST",
-          url: "http://www.bmby.com/shared/AddClient/index.php",
-          crossDomain: true,
-          // dataType: 'jsonp',
-          data: formdata,
-          success:function(res){
-                window.location.href="thankyou.html"
-            },
-            error:function(res){
+  // $(document).ready( function () {
+  //   $('form').submit( function (e) {
+  //     e.preventDefault();
+  //     var formdata = $(this).serialize();
+  //     $.ajax({
+  //         type: "POST",
+  //         url: "http://www.bmby.com/shared/AddClient/index.php",
+  //         crossDomain: true,
+  //         // dataType: 'jsonp',
+  //         data: formdata,
+  //         success:function(res){
+  //               window.location.href="thankyou.html"
+  //           },
+  //           error:function(res){
 
-                window.location.href="thankyou.html"
-            }
-       });
-      return false;
-    });
-  });
+  //               window.location.href="thankyou.html"
+  //           }
+  //      });
+  //     return false;
+  //   });
+  // });
 </script> 
 </body>
 </html>
